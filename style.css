@@ -1,0 +1,12 @@
+body {
+  background-color: rgb(238, 187, 238);
+  padding: 10px;
+  color: rgb(85, 1, 85);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#map {
+  height: 400px; /* Or any height you prefer */
+  width: 100%;   /* Make it fill the container width */
+  border: 1px solid #ccc; /* Optional: add a border */
+  margin-top: 20px; /* Optional: space above the map */
+}
