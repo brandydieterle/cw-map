@@ -94,8 +94,10 @@ for (let i = 0; i < eventsArray.length; i++) {
 const coords = (eventsArray[i].coords);
 const marker = L.marker(coords).addTo(map).bindPopup(`<b> ${eventsArray[i].year} </b><br>The conference theme was "${eventsArray[i].theme}," and it was held at ${eventsArray[i].uni} in ${eventsArray[i].city}.`); 
     // Chain .bindPopup().addTo(); above
-}
 
-
-
+const listDiv = document.getElementById('list');
+    const listItem = document.createElement('div');
+    listItem.innerHTML = `<b>${eventsArray[i].year}</b><br>The conference theme was "${eventsArray[i].theme}," and it was held at ${eventsArray[i].uni} in ${eventsArray[i].city}.<br><br>`;
+    listDiv.appendChild(listItem);
+} // End for loop to add markers
 }); // End DOMContentLoaded listener
